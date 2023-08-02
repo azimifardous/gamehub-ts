@@ -17,7 +17,9 @@ const GameCard = ({ game }: Props) => {
         objectFit="cover"
       />
       <CardBody>
-        <Heading fontSize="2xl">{game.name}</Heading>
+        <Heading fontSize="xl" marginBottom={2}>
+          {game.name}
+        </Heading>
         <HStack justifyContent="space-between">
           <PlatformIconList
             platforms={game.parent_platforms.map((p) => p.platform)}
