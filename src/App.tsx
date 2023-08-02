@@ -7,6 +7,7 @@ import { Grid, GridItem, Show, Wrap, WrapItem } from "@chakra-ui/react";
 import { useState } from "react";
 import { Genre } from "./hooks/useGenres";
 import { Platform } from "./hooks/useGames";
+import GameHeading from "./components/GameHeading";
 
 export interface GameQuery {
   genre: Genre | null;
@@ -42,6 +43,7 @@ function App() {
         </GridItem>
       </Show>
       <GridItem area={"main"} paddingX="30px">
+        <GameHeading gameQuery={gameQuery} />
         <Wrap spacing={5} marginBottom={5}>
           <WrapItem>
             <PlatformSelector
