@@ -2,15 +2,16 @@ import NavBar from "./components/NavBar";
 import GameGrid from "./components/GameGrid";
 import GenresList from "./components/GenresList";
 import PlatformSelector from "./components/PlatformSelector";
-import { Grid, GridItem, HStack, Show, Wrap, WrapItem } from "@chakra-ui/react";
+import SortSelector from "./components/SortSelector";
+import { Grid, GridItem, Show, Wrap, WrapItem } from "@chakra-ui/react";
 import { useState } from "react";
 import { Genre } from "./hooks/useGenres";
 import { Platform } from "./hooks/useGames";
-import SortSelector from "./components/SortSelector";
 
 export interface GameQuery {
   genre: Genre | null;
   platform: Platform | null;
+  sortOrder: string;
 }
 
 function App() {
@@ -48,7 +49,12 @@ function App() {
             />
           </WrapItem>
           <WrapItem>
-            <SortSelector />
+            <SortSelector
+              sortOrder={gameQuery.sortOrder}
+              onSelectSortOrder={(sortOrder) =>
+                setGameQuery({ ...gameQuery, sortOrder })
+              }
+            />
           </WrapItem>
         </Wrap>
         <GameGrid gameQuery={gameQuery} />
