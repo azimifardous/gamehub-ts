@@ -3,7 +3,7 @@ import GameGrid from "./components/GameGrid";
 import GenresList from "./components/GenresList";
 import PlatformSelector from "./components/PlatformSelector";
 import SortSelector from "./components/SortSelector";
-import { Grid, GridItem, Show, Wrap, WrapItem } from "@chakra-ui/react";
+import { Button, Grid, GridItem, Show, Wrap, WrapItem } from "@chakra-ui/react";
 import { useState } from "react";
 import { Genre } from "./hooks/useGenres";
 import { Platform } from "./hooks/usePlatforms";
