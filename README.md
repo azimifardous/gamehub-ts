@@ -1,7 +1,5 @@
 # GameHub - Vite TypeScript Project
 
-![GameHub Logo](./src/assets/logoWhite.webp)
-
 GameHub is a web application built with Vite and TypeScript that allows users to explore and discover various games using the RAWG API. The application provides a user-friendly interface to browse through an extensive collection of games, view game details, and find information about different platforms, genres, and more.
 
 ## Introduction
