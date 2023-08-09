@@ -1,10 +1,10 @@
-# GameHub - Vite TypeScript Project
+# GameHub (RAWG CLONE) - Vite TypeScript Project
 
 GameHub is a web application built with Vite and TypeScript that allows users to explore and discover various games using the RAWG API. The application provides a user-friendly interface to browse through an extensive collection of games, view game details, and find information about different platforms, genres, and more.
 
 ## Introduction
 
-GameHub is a web application built with Vite and TypeScript, developed as a practice project to learn TypeScript. The application utilizes the RAWG API for fetching game data, allowing users to explore and discover various games easily. This project serves as an educational initiative to understand TypeScript's benefits in web development and enhance skills in building modern web applications.
+This application utilizes the RAWG API for fetching game data, allowing users to explore and discover various games easily. This project serves as an educational initiative to understand TypeScript's benefits in web development and enhance skills in building modern web applications.
 
 ## Features
 
@@ -53,6 +53,7 @@ The GameHub project uses the following technologies:
 - Vite: A fast build tool and development server for modern web projects.
 - TypeScript: A typed superset of JavaScript that compiles to plain JavaScript.
 - React: A popular JavaScript library for building user interfaces.
+- Chakra UI: A simple, modular, and accessible component library that gives you the building blocks you need to build your React applications.
 - RAWG API: A video game database API used for fetching game information.
 
 ## API Used
